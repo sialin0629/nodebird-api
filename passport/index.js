@@ -1,3 +1,5 @@
+const passport = require('passport'); // passport 모듈 불러오기
+const local = require('./localStrategy'); // 로컬 인증 전략 불러오기
 const User = require('../models/user'); // User 모델 불러오기
 
 module.exports = () => {
@@ -32,5 +34,4 @@ module.exports = () => {
     });
 
     local(); // 로컬 인증 전략 설정
-    kakao(); // 카카오 인증 전략 설정
 }

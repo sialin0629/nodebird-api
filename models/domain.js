@@ -25,7 +25,7 @@ class Domain extends Sequelize.Model { // Sequelize의 Model 클래스를 확장
   }
 
   static associate(db) { // 다른 모델과의 관계를 정의하는 메서드
-    db.Domain.belongTo(db.User); // Domain 모델은 User 모델에 속해 있음. (1:N 관계)
+    db.Domain.belongsTo(db.User); // Domain 모델은 User 모델에 속해 있음. (1:N 관계)
   }
 };
 

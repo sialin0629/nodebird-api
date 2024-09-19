@@ -12,7 +12,7 @@
   </head>
   <body>
     {% if user and user.id %} <!-- 사용자 정보가 있고 사용자 ID가 존재할 경우 -->
-      <span class="user-name">안녕하세요! {{user.nick]}님</span> <!-- 사용자에게 인사말과 닉네임을 표시 -->
+      <span class="user-name">안녕하세요! {{user.nick}}님</span> <!-- 사용자에게 인사말과 닉네임을 표시 -->
       <a href="/auth/logout">
         <button>로그아웃</button> <!-- 로그아웃 버튼 -->
       </a>
